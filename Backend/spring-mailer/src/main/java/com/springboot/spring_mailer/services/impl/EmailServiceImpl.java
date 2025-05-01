@@ -99,7 +99,7 @@ public class EmailServiceImpl implements EmailService {
             helper.setFrom("sf956822@gmail.com");
             helper.setTo(to);
             helper.setSubject(subject);
-            helper.setText(message);
+            helper.setText(message,true);
             File file=new File("src/main/resources/attachments/test.png");
             Files.copy(is, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
             FileSystemResource fileSystemResource=new FileSystemResource(file);

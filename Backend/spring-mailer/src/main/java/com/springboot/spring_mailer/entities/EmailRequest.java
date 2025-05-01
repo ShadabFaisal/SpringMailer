@@ -1,13 +1,12 @@
 package com.springboot.spring_mailer.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
 @AllArgsConstructor
 @Builder
-
 public class EmailRequest {
 
     private String to;
