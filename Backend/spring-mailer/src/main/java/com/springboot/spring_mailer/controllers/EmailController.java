@@ -12,6 +12,7 @@ import java.io.IOException;
 
 @RestController
 @RequestMapping("api/v1/email")
+@CrossOrigin("*")
 public class EmailController {
 
     private EmailService emailService;
